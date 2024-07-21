@@ -237,6 +237,11 @@ dialog[open]{
 
    /* Animation */
 
+   .spinner{
+    width: 100vw;
+    height: 100dvh;
+   }
+
 .three-body {
     --uib-size: 35px;
     --uib-speed: 0.8s;

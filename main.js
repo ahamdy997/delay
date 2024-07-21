@@ -1,11 +1,10 @@
 (function () {
     const deliverDelayHost = document.querySelector('#shadow-root').shadowRoot;
-    deliverDelayHost.querySelector('.spinner').classList.remove('d-none');
-
     const firstDelay = setTimeout(() => {
+        deliverDelayHost.querySelector('main').classList.remove('d-none');
         deliverDelayHost.querySelector('.spinner').classList.add('d-none');
         clearTimeout(firstDelay);
-    },500)
+    },1000)
     // deliverDelayHost.querySelector('.layer').addEventListener('click', () => {
     //     deliverDelayHost.querySelector('.spinner').classList.remove('d-none');
     //     deliverDelayHost.querySelector('#thank-you-dialog').close();
