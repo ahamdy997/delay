@@ -246,6 +246,7 @@ dialog[open]{
     height: var(--uib-size);
     width: var(--uib-size);
     animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
    }
    
    .three-body__dot {
