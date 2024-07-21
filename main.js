@@ -1,5 +1,5 @@
 (function () {
-    const deliverDelayHost = document.querySelector('#shadow-root');
+    const deliverDelayHost = document.querySelector('#shadow-root').shadowRoot;
     deliverDelayHost.querySelector('.spinner').classList.remove('d-none');
 
     const firstDelay = setTimeout(() => {
