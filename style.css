@@ -1,12 +1,35 @@
 @font-face {
-    font-family: alexandria;
-    src: url(./Alexandria/Alexandria-VariableFont_wght.ttf);
+    font-family: 'alexandria';
+    src: url('./Alexandria/Alexandria-Black.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'alexandria';
+    src: url('./Alexandria/Alexandria-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'alexandria';
+    src: url('./Alexandria/Alexandria-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'alexandria';
+    src: url('./Alexandria/Alexandria-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: alexandria;
+    font-family: 'alexandria';
 }
 
 
