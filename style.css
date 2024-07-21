@@ -1,9 +1,14 @@
+@font-face {
+    font-family: alexandria;
+    src: url(./Alexandria/Alexandria-VariableFont_wght.ttf);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: alexandria;
 }
+
 
 .d-none{
     display: none;
