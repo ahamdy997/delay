@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleivery Delay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script defer src="./main.js"></script>
+    <style>
+          body{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+           }
+    </style>
+</head>
+<body>
+    <div id="shadow-root">
+        <template shadowrootmode="open">
+            <!-- Spinner -->
+            <div class="spinner d-none" style="height: 100dvh;">
+                <div class="three-body" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <div class="three-body__dot"></div>
+                    <div class="three-body__dot"></div>
+                    <div class="three-body__dot"></div>
+                    </div>
+            </div>
+            <!-- Container -->
+            <main class="container">
+                <div class="layer"></div>
+                <header class="delay-header">
+                    <figure class="logo">
+                        <picture>
+                            <img src="./images/logo.png" alt="logo">
+                        </picture>
+                    </figure>
+                </header>
+    
+                <section class="delay-content-section">
+                    <dotlottie-player src="https://lottie.host/be9a8e4d-9ac3-4e11-b6ff-920597262038/XQofYRGBGs.json" background="transparent" speed="1" 
+                    style="width: 86px; height: 86px;" loop autoplay></dotlottie-player>
+    
+                    <p class="delay-reported">
+                        تم الابلاغ عن وجود خطأ في تأجيل الشحنة وجاري اتخاذ الاجراء اللازم
+                    </p>
+    
+                    <button type="button" class="delay-implemented-btn">قيد التنفيذ</button>
+    
+                </section>
+
+                <section class="why-delay d-none">
+                    <p dir="auto" class="why-reason-head">لمعرفة سبب تأجيل طلبك</p>
+                    <a dir="auto" class="why-click-here">اضغط هنا</a>
+                </section>
+
+                <section class="why-delay d-none package-info">
+                    <p class="package-info-head" dir="auto">معلومات الطرد</p>
+                    <div class="client-name d-flex">
+                        <p dir="auto" class="client-name-head">اسم العميل:</p>
+                        <p dir="auto" class="client-name-text">يوسف محمد</p>
+                    </div>
+                    <div class="order-code order-price d-flex" style="flex-direction: row-reverse; gap: 20px;">
+                        <div class="client-name order-code d-flex">
+                            <p dir="auto" class="client-name-head order-code-head">كود:</p>
+                            <p dir="auto" class="client-name-text order-code-text">#2565</p>
+                        </div>
+                        <span style="color:  #D9D9D9; height: 8px; display: inline-block; font-size: 1px;"> | </span>
+                        <div class="client-name order-price d-flex">
+                            <p dir="auto" class="client-name-head order-code-head">السعر:</p>
+                            <p dir="auto" class="client-name-text order-code-text">4500 ج</p>
+                        </div>
+                    </div>
+
+                    <div class="order-code order-seller-name d-flex" style="flex-direction: row-reverse; gap: 20px;">
+                        <div class="client-name order-price d-flex">
+                            <p dir="auto" class="client-name-head order-code-head">اسم التاجر:</p>
+                            <p dir="auto" class="client-name-text order-code-text">متجر نون</p>
+                        </div>
+                        <span style="color:  #D9D9D9; height: 8px; display: inline-block; font-size: 4px;"> | </span>
+                        <div class="client-name order-code d-flex">
+                            <p dir="auto" class="client-name-head order-code-head">المحتوى:</p>
+                            <p dir="auto" class="client-name-text order-code-text">تيسرت اسود XL</p>
+                        </div>
+                       
+                    </div>
+                </section>
+                <!-- non Modal Dialog -->
+                <dialog open id="thank-you-dialog">
+                    <div class="d-flex">
+                        <dotlottie-player src="https://lottie.host/5029d860-fc79-4124-9c2d-839e80a664b5/pxe7x7sJwp.json" background="transparent" speed="1" 
+                        style="width: 190px; height: 190px;" loop autoplay></dotlottie-player>
+    
+                        <p class="thank-you-text" dir="auto">شكرا على تعاونك معنا</p>
+                        <p class="we-will-investigate" dir="auto"> 
+                            سوف يتم التحقيق في الامر و التواصل
+                                            معك في اقرب وقت
+                        </p>
+                    </div>
+                </dialog>
+                <!-- Modal Dialog -->
+                 <dialog id="complain">
+                    <div class="complain-content">
+                        <p>lalala</p>
+                    </div>
+                 </dialog>
+            </main>
+    
+            <style>
+               @import url(./style.css);
+            </style>
+    
+           
+        </template>
+    </div>
+</body>
+</html>
