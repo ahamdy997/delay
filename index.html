@@ -17,8 +17,7 @@
     </style>
 </head>
 <body>
-    <div id="shadow-root" style="width: 100vw; height: 100dvh;overflow: hidden;">
-        <template shadowrootmode="open">
+    <div id="shadow-root" >
             <!-- Spinner -->
             <div class="spinner ">
                 <div class="three-body" >
@@ -28,8 +27,7 @@
                     </div>
             </div>
             <!-- Container -->
-            <main class="container d-none">
-                <!-- <div class="layer"></div> -->
+            <main class="container d-none" >
                 <header class="delay-header">
                     <figure class="logo">
                         <picture>
@@ -50,12 +48,12 @@
     
                 </section>
 
-                <section class="why-delay d-none">
+                <section class="why-delay">
                     <p dir="auto" class="why-reason-head">لمعرفة سبب تأجيل طلبك</p>
                     <a dir="auto" class="why-click-here" href="#">اضغط هنا</a>
                 </section>
 
-                <section class="why-delay d-none package-info">
+                <section class="why-delay package-info">
                     <p class="package-info-head" dir="auto">معلومات الطرد</p>
                     <div class="client-name d-flex">
                         <p dir="auto" class="client-name-head">اسم العميل:</p>
@@ -87,22 +85,33 @@
                     </div>
                 </section>
             </main>
-            <dialog  id="thank-you-dialog">
-                <div class="d-flex">
-                    <dotlottie-player src="./animate.json" background="transparent" speed="1" 
-                    style="width: 190px; height: 190px;" loop autoplay></dotlottie-player>
+            <dialog id="thank-you-dialog">
+               <div class="dialog-design d-flex" >
+                <dotlottie-player src="./animate.json" class="dialog-design" background="transparent" speed="1" 
+                style="width: 190px; height: 190px;" loop autoplay></dotlottie-player>
 
-                    <p class="thank-you-text" dir="auto">شكرا على تعاونك معنا</p>
-                    <p class="we-will-investigate" dir="auto"> 
-                        سوف يتم التحقيق في الامر و التواصل
-                                        معك في اقرب وقت
-                    </p>
-                </div>
+                <p class="thank-you-text dialog-design"  dir="auto">شكرا على تعاونك معنا</p>
+                <p class="we-will-investigate dialog-design"  dir="auto"> 
+                    سوف يتم التحقيق في الامر و التواصل
+                                    معك في اقرب وقت
+                </p>
+               </div>
             </dialog>
-            <!-- Modal Dialog -->
              <dialog id="complain">
-                <div class="complain-content">
-                    <p>lalala</p>
+                <div class="complain-content  dialog-design ">
+                    <p class="complain-head dialog-design" dir="auto">المندوب أجل شحنتك بسبب " ان العميل لا يرد بعد الذهاب اليه " هل التأجيل حقيقي ؟</p>
+                    <div class="check-box dialog-design">
+                      <div class="yes dialog-design">
+                          <label for="yes" class="dialog-design" dir="auto">نعم</label>
+                            <input type="radio" id="yes" dir="auto" class="dialog-design">
+                      </div>
+
+                       <div class="no dialog-design">
+                           <label for="no" class="dialog-design" dir="auto">لا</label>
+                            <input type="radio" class="dialog-design" id="no" dir="auto">
+
+                       </div>
+                    </div>
                 </div>
              </dialog>
     
@@ -111,7 +120,6 @@
             </style>
     
            
-        </template>
     </div>
 </body>
 </html>
