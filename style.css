@@ -229,6 +229,16 @@
             border-radius: 10px;
             height: 100px;
         }
+        & .btn-send{
+            width: 100%;
+            margin-top: 102px;
+            border-radius: 51px;
+            background-color: #31006F;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 41px
+        }
     }
 }
 
