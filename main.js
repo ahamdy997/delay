@@ -26,4 +26,6 @@ complainDialog.addEventListener('click', (e) => {
 
 deliverDelayHost.querySelector('.why-click-here').addEventListener('click', () => {
     complainDialog.showModal();
+    complainDialog.querySelector('input[radio]')
+
 })

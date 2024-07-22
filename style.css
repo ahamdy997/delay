@@ -149,21 +149,23 @@
 
 }
 #thank-you-dialog, #complain {
-    background-color: rgba(0, 0, 0, 0.1);
     border: none;
+    outline: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     min-height: 434px;
     transform: translateY(calc(100dvh - 434px));
+    background-color: #fff;
+
     &::backdrop {
         background-color: rgba(0, 0, 0, 0.5);;
     }
     
     .d-flex {
         background-color: #fff;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
         min-height: 434px;
         height: 100%;
         display: flex;
@@ -194,9 +196,6 @@
     .complain-content {
         padding-inline: 26px;
         height: 100%;
-        background-color: #fff;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
         padding-top: 64px;
         & .complain-head{
             width: calc( 374px / 430px);
@@ -209,8 +208,10 @@
             display: flex;
             flex-direction: row-reverse;
             gap: 40px;
+            align-items: center;
             & .no label, & .yes label{
                 margin-right: 7px;
+                cursor: pointer;
             }
             & input[type="radio"]{
                 width: 20px;
@@ -228,6 +229,13 @@
             border: 1px solid #D4D9E4;
             border-radius: 10px;
             height: 100px;
+            max-width: 500px;
+        }
+        & .btn-wrap{
+            direction: rtl;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
         & .btn-send{
             width: 100%;
@@ -237,7 +245,9 @@
             color: #fff;
             font-weight: 700;
             font-size: 14px;
-            line-height: 41px
+            line-height: 41px;
+            max-width: 500px;
+            
         }
     }
 }
