@@ -18,6 +18,8 @@
 </head>
 <body>
     <div id="shadow-root" >
+        <!-- if Shadow DOM Needed -->
+            <!-- <template shadowrootmode="open"> -->
             <!-- Spinner -->
             <div class="spinner ">
                 <div class="three-body" >
@@ -40,9 +42,9 @@
                     <dotlottie-player src="./Animation.json" background="transparent" speed="1" 
                     style="width: 86px; height: 86px;" loop autoplay></dotlottie-player>
     
-                    <p class="delay-reported">
+                    <span class="delay-reported">
                         تم الابلاغ عن وجود خطأ في تأجيل الشحنة وجاري اتخاذ الاجراء اللازم
-                    </p>
+                    </span>
     
                     <button type="button" class="delay-implemented-btn">قيد التنفيذ</button>
     
@@ -126,6 +128,7 @@
             </style>
     
            
+<!-- </template> -->
     </div>
 </body>
 </html>
