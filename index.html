@@ -85,6 +85,7 @@
                     </div>
                 </section>
             </main>
+            
             <dialog id="thank-you-dialog">
                <div class="dialog-design d-flex" >
                 <dotlottie-player src="./animate.json" class="dialog-design" background="transparent" speed="1" 
@@ -103,15 +104,16 @@
                     <div class="check-box dialog-design">
                       <div class="yes dialog-design">
                           <label for="yes" class="dialog-design" dir="auto">نعم</label>
-                            <input type="radio" id="yes" dir="auto" class="dialog-design">
+                            <input type="radio" id="yes" dir="auto" class="dialog-design" name="complain">
                       </div>
 
                        <div class="no dialog-design">
                            <label for="no" class="dialog-design" dir="auto">لا</label>
-                            <input type="radio" class="dialog-design" id="no" dir="auto">
-
+                            <input type="radio" class="dialog-design" id="no" dir="auto" name="complain">
                        </div>
+
                     </div>
+                    <textarea name="add-notes" class="dialog-design"  placeholder="هل لديك ملاحظات"></textarea>
                 </div>
              </dialog>
     

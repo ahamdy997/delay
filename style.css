@@ -48,10 +48,9 @@
     display: flex;
 }
 .container {
-
     overflow: hidden;
     background-color: #F9F9F9;
-    & .delay-header {
+    .delay-header {
         width: 100%;
         background-color: #D4D9E4;
         min-height: 241px;
@@ -210,9 +209,29 @@
             display: flex;
             flex-direction: row-reverse;
             gap: 40px;
+            & .no label, & .yes label{
+                margin-right: 7px;
+            }
+            & input[type="radio"]{
+                width: 20px;
+                height: 20px;
+                accent-color: #31006F;
+
+             
+            }
+        }
+        textarea[name='add-notes']{
+            direction: rtl;
+            padding: 20px;
+            width: 100%;
+            margin-top: 40px;
+            border: 1px solid #D4D9E4;
+            border-radius: 10px;
+            height: 100px;
         }
     }
 }
+
 
 
    /* Animation */
