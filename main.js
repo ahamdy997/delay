@@ -5,7 +5,7 @@
    
     const firstDelay = setTimeout(() => {
         deliverDelayHost.querySelector('.container').classList.remove('d-none');
-        deliverDelayHost.querySelector('.spinner').classList.add('d-none');
+        deliverDelayHost.querySelector('.spinner').remove();
         thankYouDialog.showModal();
         clearTimeout(firstDelay);
     },1000);
